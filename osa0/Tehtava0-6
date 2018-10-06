@@ -1,0 +1,21 @@
+Tehtävä 0.6
+
+
+
+kayttaja->selain:
+note left of selain
+kayttaja kirjottaa kenttään uuden lisättävän tekstin ja painaa Talleta-näppäintä
+end note
+
+selain->palvelin: POST fullstack-exampleapp.herokuapp.com/new_note_spa
+
+note left of selain
+ selain lähetää palvelimelle uuden muodostetun muistiinpanon json-muodossa
+end note
+
+palvelin->selain: status 201,  created
+
+
+note left of palvelin
+  muodostetaan HTML missä on vanhat + juuri muodostettu muistiinpano
+end note
